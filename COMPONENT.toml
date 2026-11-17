@@ -3,7 +3,7 @@ name = "SigmaOS-swaync"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "swaync component"
+description = "SigmaOS SigmaOS-swaync component"
 upstream = []
 
 [contract]
