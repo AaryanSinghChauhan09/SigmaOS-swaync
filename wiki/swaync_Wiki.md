@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-swaync Component Wiki
+# SigmaOS-swaync Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-swaync provides SigmaOS SigmaOS-swaync component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-swaync provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-swaync Abstraction
-- Fail-Fast on SigmaOS-swaync Initialization Errors
-- Deterministic SigmaOS-swaync Setup
-- Clear Abstraction Over SigmaOS-swaync APIs
-- Composition over Inheritance for SigmaOS-swaync extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-swaync Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-swaync Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-swaync Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-swaync APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-swaync extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-swaync follows a SigmaOS-swaync pattern:
+SigmaOS-swaync follows a SigmaOS-swaync pattern:
 - **SigmaOS-swaync Core**: Provides SigmaOS-swaync support, SigmaOS-swaync management, and SigmaOS-swaync tracking
 - **Management**: Supports SigmaOS-swaync management, SigmaOS-swaync configuration, and SigmaOS-swaync lifecycle
 - **Tracking**: Supports SigmaOS-swaync status, SigmaOS-swaync tracking, and SigmaOS-swaync lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-swaync follows a SigmaOS-swaync pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-swaync by given configuration
--  - Register a SigmaOS-swaync by given name
--  - Get SigmaOS-swaync status and SigmaOS-swaync availability
--  - Track SigmaOS-swaync management and SigmaOS-swaync tracking
+- Manage a SigmaOS-swaync by given configuration
+- Register a SigmaOS-swaync by given name
+- Get SigmaOS-swaync status and SigmaOS-swaync availability
+- Track SigmaOS-swaync management and SigmaOS-swaync tracking
 - Error types for SigmaOS-swaync failure scenarios or unsupported SigmaOS-swaync types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-swaync init, SigmaOS-swaync management)
 3. **Assert**: Verify the expected SigmaOS-swaync results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-swaync initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-swaync failure scenarios
 - Unit tests provided for SigmaOS-swaync management and configuration
